@@ -1,0 +1,30 @@
+- Columnas diplicadas: 
+    ej: si existe la fecha de nacimiento (NO CREAR LA COLUMNA EDAD)
+    ej: si existe la columna en una tabla (EVITAR CREARLA EN OTRA)
+    ej: (CREAR TABLA SEPARADA) si la información es parte de 2 o mas tablas
+    ej: si la tabla contiene información que al consultarla no es necesaria (POSIBLEMENTE SERÍA MEJOR SEPARARLA)
+
+- Triggers:
+    ej: proteger la base de datos de (ALTERACIONES)
+    ej: (REGISTROS) de cambios
+    ej: (COPIAS) de seguridad
+
+- Funciones:
+    ej: si no existe el front-end
+
+- Vistas: 
+    ej: si no existe el front-end
+
+- Procedimientos almacenados:
+    ej: cuando se quiere restrinjir el acceso (SEGURIDAD) desde el servidor 
+    ej: cuando se quiera manipular los datos desde el sevidor
+
+- Transaciones:
+    ej: cuando se quiere ejecutar (2 o MAS SENTENCIAS)
+
+- Eventos: 
+    ej: cuando se quieran realizar tareas automaticas
+
+- SQL
+Triggers para               : comprovaciones desde el servidor...
+
