@@ -1,0 +1,8 @@
+- console.log(conectar.constructor);
+    res: [Function: Connection] { createQuery: [Function: createQuery] }
+
+- console.log(conectar.constructor.length);
+    res: 1
+
+- console.log(conectar.constructor.name);
+    res: Connection
