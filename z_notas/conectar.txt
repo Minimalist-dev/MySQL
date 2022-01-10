@@ -6,3 +6,6 @@
 
 - console.log(conectar.constructor.name);
     res: Connection
+
+- console.log(conectar.valueOf());
+    res: objeto con información sobre la conección

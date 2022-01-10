@@ -14,6 +14,6 @@
         "mysql": "^2.18.1"
     },
     "scripts": {
-        "start": "node js\/drop\/table_limpiar.js"
+        "start": "node js\/alter\/cambiar_el_typo_de_dato_a_la_columna.js"
     }
 }
