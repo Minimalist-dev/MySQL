@@ -1,0 +1,3 @@
+https://www.w3schools.com/mysql/mysql_check.asp
+
+- Probar con la versió de mysql 8.0.16 para arriba
