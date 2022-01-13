@@ -14,11 +14,9 @@ CREATE TABLE Orders (
         OrderID
     ),
     FOREIGN KEY (
-        PersonID,
-        OrderNumber
+        PersonID
     ) REFERENCES Persons(
-        ID,
-        LastName
+        ID
     )
 );
 
@@ -59,5 +57,5 @@ CREATE TABLE Orders (
 
 /* Notas: 
 si no se le pone nombre a la FOREIGN KEY, el sistema de lo pondrá y la tabla
-principal debe ser PRIMARY KEY o UNIQUE  
+principal debe ser PRIMARY KEY o UNIQUE y del mismo tipo 
 --------------------------------------------------------------------------------*/
