@@ -14,6 +14,6 @@
         "mysql": "^2.18.1"
     },
     "scripts": {
-        "start": "node js\/select\/select.js"
+        "start": "node insertar_datos.js"
     }
 }

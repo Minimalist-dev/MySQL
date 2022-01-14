@@ -1,6 +1,6 @@
 let conectar = require('./conectar/admin');
 
-const MySQL = "INSERT INTO Persons VALUES?";
+const MySQL = "INSERT INTO Persons VALUES ?";
 
 const VALUES = [
     [null, 'John',    'Viola',    18, 'Highway 71',       'Londres'],
