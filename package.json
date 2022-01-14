@@ -14,6 +14,6 @@
         "mysql": "^2.18.1"
     },
     "scripts": {
-        "start": "node js\/views\/view.js"
+        "start": "node js\/select\/select.js"
     }
 }
