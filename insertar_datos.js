@@ -1,6 +1,7 @@
 let conectar = require('./conectar/admin');
 
 const MySQL = "INSERT INTO Persons VALUES ?";
+//const MySQL = "INSERT INTO Orders VALUES ?";
 
 const VALUES = [
     [null, 'John',    'Viola',    18, 'Highway 71',       'Londres'],
@@ -33,6 +34,37 @@ const VALUES = [
     [null, 'Viola',   'Peter',    19, 'Sideway 1633',     'Sídney']
 ];
 
+//const VALUES = [
+//    [null, 18, null,       'Londres'],
+//    [null, 20, null,      'Barcelona'],
+//    [null, 22, null,      'Melbourne'],
+//    [null, 24, null,      'Sídney'],
+//    [null, 26, null,       'Shanghái'],
+//    [null, 28, null,     'Chicago'],
+//    [null, 30, null,    'Los Ángeles'],
+//    [null, 31, null,       'Madrid'],
+//    [null, 29, null,       'México DF'],
+//    [null, 27, null,  'Hong Kong'],
+//    [null, 25, null,     'Londres'],
+//    [null, 23, null,   'Barcelona'],
+//    [null, 21, null,    'Melbourne'],
+//    [null, 19, null,     'Sídney'],
+//    [null, 18, null,       'Londres'],
+//    [null, 20, null,      'Barcelona'],
+//    [null, 22, null,      'Melbourne'],
+//    [null, 24, null,      'Sídney'],
+//    [null, 26, null,       'Shanghái'],
+//    [null, 28, null,     'Chicago'],
+//    [null, 30, null,    'Los Ángeles'],
+//    [null, 31, null,       'Madrid'],
+//    [null, 29, null,       'México DF'],
+//    [null, 27, null,  'Hong Kong'],
+//    [null, 25, null,     'Londres'],
+//    [null, 23, null,   'Barcelona'],
+//    [null, 21, null,    'Melbourne'],
+//    [null, 19, null,     'Sídney']
+//];
+
 conectar.query(MySQL, [VALUES], function (error, resultado) {
     if (error) {
         throw error;
@@ -52,3 +84,15 @@ CREATE TABLE Persons (
     PRIMARY KEY (Personid)
 ); 
 */
+
+/*
+CREATE TABLE Orders (
+    OrderID int NOT NULL AUTO_INCREMENT,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    City varchar(255),
+    PRIMARY KEY (
+        OrderID
+    )
+);
+*/ 
