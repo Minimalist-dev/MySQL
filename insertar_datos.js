@@ -2,6 +2,7 @@ let conectar = require('./conectar/admin');
 
 const MySQL = "INSERT INTO Persons VALUES ?";
 //const MySQL = "INSERT INTO Orders VALUES ?";
+//const MySQL = "INSERT INTO Customers VALUES ?";
 
 const VALUES = [
     [null, 'John',    'Viola',    18, 'Highway 71',       'Londres'],
@@ -94,5 +95,18 @@ CREATE TABLE Orders (
     PRIMARY KEY (
         OrderID
     )
+);
+*/ 
+
+/*
+CREATE TABLE Customers (
+    Personid int NOT NULL AUTO_INCREMENT,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    Year int,
+    Address varchar(255),
+    City varchar(255),
+    PRIMARY KEY (Personid)
 );
 */ 
