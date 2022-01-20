@@ -1,0 +1,3 @@
+- Permitir procedimientos, funciones, etc...
+    1 - cd /opt/lampp/bin
+    2 - ./mysql_upgrade

@@ -16,11 +16,14 @@
     ej: si no existe el front-end
 
 - Procedimientos almacenados:
+    ej: mejora el rendimiento de las (sentencias ejecutadas)
     ej: cuando se quiere restrinjir el acceso (SEGURIDAD) desde el servidor 
     ej: cuando se quiera manipular los datos desde el sevidor
 
 - Transaciones:
     ej: cuando se quiere ejecutar (2 o MAS SENTENCIAS)
+    ej: Actualizar, insertar o eliminar registros en la base de datos
+    ej: Alternativa a los triggers, de manera mas detallada desde la interfaz. Solo si los triggers no bastan.
 
 - Eventos: 
     ej: cuando se quieran realizar tareas automaticas
