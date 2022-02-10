@@ -8,15 +8,18 @@
     ej: proteger la base de datos de (ALTERACIONES)
     ej: (REGISTROS) de cambios
     ej: (COPIAS) de seguridad
+    ej: ejecutar 2 o mas sentencias a la vez, en vez de transacciones
 
 - Funciones:
     ej: si no existe el front-end
+    ej: algoritmos en el servidor
 
 - Vistas: 
     ej: si no existe el front-end
+    ej: crear bases de datos personalizadas
 
 - Procedimientos almacenados:
-    ej: mejora el rendimiento de las (sentencias ejecutadas)
+    ej: mejorar el rendimiento de las (sentencias ejecutadas)
     ej: cuando se quiere restrinjir el acceso (SEGURIDAD) desde el servidor 
     ej: cuando se quiera manipular los datos desde el sevidor
 
@@ -27,7 +30,4 @@
 
 - Eventos: 
     ej: cuando se quieran realizar tareas automaticas
-
-- SQL
-Triggers para               : comprovaciones desde el servidor...
 
