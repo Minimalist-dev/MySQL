@@ -1,3 +1,94 @@
+XAMPP
+--------------------------------------------------------------------------------------
+
 - Permitir procedimientos, funciones, etc...
+	- XAMPP tiene que estar iniciado:
+    0 - Ejecutar los siguientes comandos como root:
     1 - cd /opt/lampp/bin
     2 - ./mysql_upgrade
+
+MySQL
+------------------------------------------------------------------------------------ 
+
+
+- Instalación de MySQL: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-es
+- sudo apt update
+- sudo apt install mysql-server o sudo apt install mysql-server mysql-client --fix-broken --fix-missing
+- sudo mysql_secure_installation
+
+
+- Manejar:
+    sudo systemctl stop mysql
+    sudo systemctl status mysql
+
+- Copia de seguridad:
+    sudo tar -zcvf ~/msql_backup.tar.gz /etc/mysql /var/lib/mysql
+
+- Desintalar:
+    sudo apt-get purge mysql*
+    sudo rm -rfv /etc/mysql /var/lib/mysql
+    sudo apt autoremove
+    sudo apt autoclean
+
+-------------------------------------------------------------------------------------------
+
+
+INSTALACIÓN Y ACCESO A UN SERVIDOR MySQL EN UBUNTU 20.04: https://www.youtube.com/watch?v=v0NYz-mkBFM
+           
+ • Entrar en modo superusuario
+ sudo -i
+
+
+ • Actualizar repositorio
+ apt-get update
+
+
+ • Instalar mysql
+ apt-get install mysql-server
+
+
+ • Versión
+ mysql --version
+
+
+ • Manual
+ man mysql
+
+
+ • Acceso en local
+ mysql -u root -p
+
+
+ • Acceso desde otro equipo de la red
+ mysql -h 192.168.1.22 -u root -p
+
+
+ • Sintaxis 
+ mysql -h Ipservidor -u nombreUsuario -p nombreBD
+
+
+ • Acceso en local modificanto el prompt
+ mysql -u root -p --prompt="00-Redes-PlusA "
+
+
+ • Salir del cliente
+ quit
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------
+
+- activar lo siguiente en el archio "/etc/mysql/mysql.conf.d/mysqld.cnf"
+    user        = mysql
+    pid-file	= /var/run/mysqld/mysqld.pid
+    socket	= /var/run/mysqld/mysqld.sock
+    port	= 3306
+    datadir	= /var/lib/mysql
+
+sudo apt-get install --reinstall mariadb-server
+sudo apt-get install --reinstall php-mysql
